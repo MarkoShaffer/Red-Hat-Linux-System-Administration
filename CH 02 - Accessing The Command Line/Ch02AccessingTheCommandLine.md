@@ -46,7 +46,7 @@ _Full screen width and center alignment_
 ## How TO:
 1.  Use the **date** command to display the current time and date.
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image2.png){: width="972" height="589" }
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image2.png){: width="972" height="589" } 
 _Full screen width and center alignment_
 
 2.  Display the current time in 12-hour clock time (for example,
