@@ -6,12 +6,15 @@ categories: [Red Hat System Administration I, Linux Fundamentals - ITEC 200]
 tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should always be lowercase
 ---
 
-
 # Chapter 03 Managing Files from the Command Line Lab
-# Red Hat System Administration I 8.2
+> Red Hat System Administration I 8.2
+>
 > Information Technology, Franklin University
+>
 > ITEC 200: Linux Fundamentals
+>
 > Professor Kagan Ulucay
+>
 > 5/28/2023
 
 ## Outcomes:
@@ -19,10 +22,7 @@ tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should al
 > In this lab, you will efficiently create, move, and remove files and
 directories by using the shell and a variety of file name matching
 techniques.
-
-
-> You should be able to:
-
+>
 > - Use wildcards to locate and manipulate files.
 
 ## Workstation Login:
@@ -42,11 +42,9 @@ on the network.
 [student@workstation ~]$ lab cli-review start
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image1.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image1.png)
 
 ## How To:
-
 1.  Use the **ssh** command to log in to serverb as the student user.
     The systems are configured to use SSH keys for authentication, and
     therefore a password is not required.
@@ -57,8 +55,7 @@ _Full screen width and center alignment_
 [student@serverb ~]$
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image2.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image2.png)
 
 2.  Before you create project files, use the **mkdir** command with
     brace expansion to create empty project planning documents in
@@ -66,8 +63,7 @@ _Full screen width and center alignment_
     if ~/Documents does not exist, the -p option for
     the **mkdir** command will create it.)
 
-> Create two empty files in
-> the ~/Documents/project_plans directory: season1_project_plan.odf and season2_project_plan.odf.
+> Create two empty files in the ~/Documents/project_plans directory: season1_project_plan.odf and season2_project_plan.odf.
 
 ```bash
 [student@serverb ~]$ mkdir -p ~/Documents/project_plans]
@@ -82,8 +78,7 @@ total 0
 -rw-rw-r--. 1 student student 0 Jan 31 18:20 season2_project_plan.odf
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image3.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image3.png)
 
 3.  Create sets of empty practice files to use in this lab. If you do
     not immediately recognize the intended shell expansion shortcut, use
@@ -103,8 +98,7 @@ tv_season1_episode3.ogg tv_season2_episode1.ogg tv_season2_episode5.ogg
 tv_season1_episode4.ogg tv_season2_episode2.ogg tv_season2_episode6.ogg
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image4.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image4.png)
 
 4.  As the author of a successful series of mystery novels, your next
     bestseller's chapters are being edited for publishing. Create a
@@ -119,8 +113,7 @@ mystery_chapter2.odf mystery_chapter5.odf mystery_chapter8.odf
 mystery_chapter3.odf mystery_chapter6.odf
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image5.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image5.png)
 
 5.  Use a single command to create two subdirectories
     named season1 and season2 under the Videos directory, to organize
@@ -132,8 +125,7 @@ _Full screen width and center alignment_
 season1 season2
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image6.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image6.png)
 
 6.  Move the appropriate TV episodes into the season subdirectories. Use
     only two commands, specifying destinations using relative syntax.
@@ -158,8 +150,7 @@ tv_season2_episode2.ogg tv_season2_episode4.ogg
 tv_season2_episode6.ogg
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image7.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image7.png)
 
 7.  Create a 2-level directory hierarchy with a single command to
     organize the mystery book chapters. Create my_bestseller under
@@ -181,8 +172,7 @@ Documents/project_plans:
 season1_project_plan.odf season2_project_plan.odf
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image8.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image8.png)
 
 8.  Create three more subdirectories directly under
     the my_bestseller directory using a single command. Name these
@@ -212,8 +202,7 @@ Documents/project_plans:
 season1_project_plan.odf season2_project_plan.odf
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image9.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image9.png)
 
 9.  Change to the chapters directory. Using the tilde (~) home directory
     shortcut to specify the source files, move all book chapters to
@@ -229,8 +218,7 @@ mystery_chapter2.odf mystery_chapter5.odf mystery_chapter8.odf
 mystery_chapter3.odf mystery_chapter6.odf
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image10.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image10.png)
 
 10. You sent the first two chapters to the editor for review. Move only
     those two chapters to the editor directory to avoid modifying them
@@ -247,8 +235,7 @@ mystery_chapter4.odf mystery_chapter6.odf mystery_chapter8.odf
 mystery_chapter1.odf mystery_chapter2.odf
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image11.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image11.png)
 
 11. While on vacation you intend to write chapters 7 and 8. Use a single
     command to move the files from the chapters directory to
@@ -265,18 +252,18 @@ mystery_chapter4.odf mystery_chapter6.odf
 mystery_chapter7.odf mystery_chapter8.odf
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image12.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image12.png)
 
 12. Change your working directory to ~/Videos/season2, and then copy the
     first episode of the season to the vacation directory.
 
-> [student@serverb chapters]$ cd ~/Videos/season2]>
-> \[student@serverb season2]$ cp \*episode1.ogg
-> ~/Documents/my_bestseller/vacation
+```bash
+[student@serverb chapters]$ cd ~/Videos/season2
+[student@serverb season2]$ cp \*episode1.ogg
+~/Documents/my_bestseller/vacation
+```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image13.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image13.png)
 
 13. Use a single **cd** command to change from your working directory to
     the ~/Documents/my_bestseller/vacation directory. List its files.
@@ -287,26 +274,19 @@ _Full screen width and center alignment_
     copy the episode 2 file into the vacation directory. Use the
     shortcut again to return to the vacation directory.
 
-> [student@serverb season2]$ cd
-> ~/Documents/my_bestseller/vacation]>
-> [student@serverb vacation]$ ls]>
-> mystery_chapter7.odf mystery_chapter8.odf tv_season2_episode1.ogg
->
-> [student@serverb vacation]$ cd -]>
-> /home/ec2-user/Videos/season2
->
-> [student@serverb season2]$ cp \*episode2.ogg
-> ~/Documents/my_bestseller/vacation]>
-> [student@serverb vacation]$ cd -]>
-> /home/ec2-user/Documents/my_bestseller/vacation
->
-> [student@serverb vacation]$ ls]>
-> mystery_chapter7.odf tv_season2_episode1.ogg
->
-> mystery_chapter8.odf tv_season2_episode2.ogg
+```bash
+[student@serverb season2]$ cd ~/Documents/my_bestseller/vacation
+[student@serverb vacation]$ ls
+mystery_chapter7.odf mystery_chapter8.odf tv_season2_episode1.ogg
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image14.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+[student@serverb vacation]$ cd ~/home/ec2-user/Videos/season2
+[student@serverb season2]$ cp \*episode2.ogg ~/Documents/my_bestseller/vacation]>
+[student@serverb vacation]$ cd ~/home/ec2-user/Documents/my_bestseller/vacation
+[student@serverb vacation]$ ls
+mystery_chapter7.odf tv_season2_episode1.ogg
+mystery_chapter8.odf tv_season2_episode2.ogg
+```
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image14.png)
 
 14. The authors of chapters 5 and 6 want to experiment with possible
     changes. Copy both files from
@@ -317,19 +297,18 @@ _Full screen width and center alignment_
     matching to specify which chapter numbers to match in the filename
     argument of the **cp** command.
 
-> [student@serverb vacation]$ cd ~/Documents/my_bestseller]>
-> [student@serverb my_bestseller]$ cp
-> chapters/mystery_chapter\[56\].odf changes]>
-> [student@serverb my_bestseller]$ ls chapters]>
-> mystery_chapter3.odf mystery_chapter5.odf
->
-> mystery_chapter4.odf mystery_chapter6.odf
->
-> [student@serverb my_bestseller]$ ls changes]>
-> mystery_chapter5.odf mystery_chapter6.odf
+```bash
+[student@serverb vacation]$ cd ~/Documents/my_bestseller
+[student@serverb my_bestseller]$ cp chapters/mystery_chapter\[56\].odf changes
+[student@serverb my_bestseller]$ ls chapters
+mystery_chapter3.odf mystery_chapter5.odf
+mystery_chapter4.odf mystery_chapter6.odf
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image15.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+[student@serverb my_bestseller]$ ls changes
+mystery_chapter5.odf mystery_chapter6.odf
+```
+
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image15.png)
 
 15. Change your current directory to the change’s directory.
 
@@ -352,8 +331,7 @@ _Full screen width and center alignment_
 >
 > mystery_chapter5_2017-04-18.odf mystery_chapter6.odf
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image16.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image16.png)
 
 16. After further review, you decide that the plot changes are not
     necessary. Delete the changes directory.
@@ -375,8 +353,7 @@ _Full screen width and center alignment_
 > [student@serverb my_bestseller]$ ls]>
 > chapters editor vacation
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image17.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image17.png)
 
 17. When the vacation is over, the vacation directory is no longer
     needed. Delete it using the **rm** command with
@@ -391,8 +368,7 @@ _Full screen width and center alignment_
 > [student@serverb my_bestseller]$ cd]>
 > [student@serverb ~]$]
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image18.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image18.png)
 
 18. Create a hard link to
     the ~/Documents/project_plans/season2_project_plan.odf file
@@ -462,38 +438,37 @@ _Full screen width and center alignment_
 > **-rw-rw-r--. 2 student student 0 Jan 31 19:05
 > season2_project_plan.odf]
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image19.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image19.png)
 
 19. Exit from serverb.
+```bash
+[student@serverb ~]$ exit
+logout
+Connection to serverb closed.
+[student@workstation ~]$
+```
 
-> [student@serverb ~]$ exit]>
-> logout
->
-> Connection to serverb closed.
->
-> \[student@workstation ~]$
-
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image20.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image20.png)
 
 ## Evaluation:
 On workstation, run the **lab files-review grade** script to confirm
 success on this lab.
 
+```bash
 [student@workstation ~]$ lab files-review grade]
+```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image21.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image21.png)
 
 ## Finish:
 On workstation, run the **lab files-review finish** script to finish
 this lab. This script removes all files and directories created
 on serverb during the lab exercise.
 
-[student@workstation ~]$ lab files-review finish]
+```bash
+[student@workstation ~]$ lab files-review finish
+```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\ManagingFilesFromTheCommandLine/image22.png"){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image22.png)
 
 This concludes the lab.
