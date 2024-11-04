@@ -7,10 +7,14 @@ tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should al
 ---
 
 # Chapter 2: Accessing the Command Line Lab 
-# Red Hat System Administration I 8.2
+> Red Hat System Administration I 8.2
+>
 > Information Technology, Franklin University
+>
 > ITEC 200: Linux Fundamentals
+>
 > Professor Kagan Ulucay
+>
 > 5/28/2023
 
 ## Outcomes:
@@ -40,14 +44,12 @@ student's home directory.
 [student@workstation ~]$ lab cli-review start
 ```
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image1.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image1.png)
 
 ## How TO:
 1.  Use the **date** command to display the current time and date.
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image2.png){: width="972" height="589" } 
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image2.png)
 
 2.  Display the current time in 12-hour clock time (for example,
     11:42:11 AM). Hint: The format string that displays that output
@@ -56,15 +58,13 @@ _Full screen width and center alignment_
 > Use the +%r argument with the **date** command to display the current
 > time in 12-hour clock time.
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image3.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image3.png)
 
 3.  What kind of file is /home/student/zcat? Is it readable by humans?
 
 > Use the **file** command to determine its file type.
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image4.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image4.png)
 
 4.  Use the **wc** command and Bash shortcuts to display the size
     of zcat.
@@ -75,25 +75,21 @@ _Full screen width and center alignment_
 > keys **Esc** and **.** pressed at the same time) to reuse the argument
 > from the previous command.
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image5.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image5.png)
 
 5.  Display the first 10 lines of zcat.
 
 > The **head** command displays the beginning of the file. Try using
 > the **Esc**+**.** shortcut again.
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image6.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image6.png)
 
 6.  Display the last 10 lines of the zcat file.
 
 > Use the **tail** command to display the last 10 lines of
 > the zcat file.
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image7.png){: width="972" height="589" }
-_Full screen width and center alignment_
-
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image7.png)
 7.  Repeat the previous command exactly with three or fewer keystrokes.
 
 > Repeat the previous command exactly. Either press the **UpArrow** key
@@ -102,8 +98,7 @@ _Full screen width and center alignment_
 > command **!!** and then press **Enter** (uses three keystrokes) to run
 > the most recent command in the command history . (Try both.)
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image8.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image8.png)
 
 8.  Repeat the previous command, but use the -n 20 option to display the
     last 20 lines in the file. Use command-line editing to accomplish
@@ -114,8 +109,7 @@ _Full screen width and center alignment_
 > line. **Ctrl**+**RightArrow** jumps to the next word, then add the -n
 > 20 option and hit **Enter** to execute the command.
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image9.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image9.png)
 
 9.  Use the shell history to run the **date +%r** command again.
 
@@ -128,8 +122,7 @@ _Full screen width and center alignment_
 > example. Determine the command number to use based on the output of
 > your own **history** command.
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image10.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image10.png)
 
 ## Evaluation:
 
@@ -140,8 +133,7 @@ success on this exercise.
 [student@workstation ~]$ lab cli-review grade
 ```
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image11.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image11.png)
 
 # Finish:
 
@@ -152,7 +144,6 @@ lab.
 [student@workstation ~]$ lab cli-review finish
 ```
 
-![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image12.png){: width="972" height="589" }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image12.png)
 
 This concludes the lab.
