@@ -7,10 +7,14 @@ tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should al
 ---
 
 # Chapter 4 Getting Help in Red Hat Enterprise Linux
-# Red Hat System Administration I 8.2
+> Red Hat System Administration I 8.2
+>
 > Information Technology, Franklin University
+>
 > ITEC 200: Linux Fundamentals
+>
 > Professor Kagan Ulucay
+>
 > 6/4/2023
 
 ## Outcomes:
@@ -24,71 +28,66 @@ tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should al
   non-text formatted files.
 
 ## Workstation Login:
-> Log in to workstation as student using student as the password.
+> Log in toÂ workstationÂ asÂ studentÂ usingÂ studentÂ as the password.
 
 |          | Franklin VM: | Standard User Account: | The Student's Root Account: |
 |----------|--------------|------------------------|-----------------------------|
 | Username | kiosk        | student                | root                        |
 | Password | redhat       | student                | redhat                      |
 
-> On the workstation, run the **lab cli-review start** script to set up a
-clean lab environment. The script also copies the zcat file to the
+> OnÂ the workstation, run theÂ **lab cli-review start**Â script to set up a
+clean lab environment. The script also copies theÂ zcatÂ file toÂ the
 student's home directory.
 
-[```bash
+```bash
 [student@workstation ~]$ lab cli-review start
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image1.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image1.png)
 
 ```bash
 [student@workstation ~]$ lab help-review start
 ```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image2.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image2.png)
 
 ## How To:
 1.  **On workstation, determine how to prepare a man page for printing.
     Specifically, find what format or rendering language is used for
     printing.
 
-> Use the **man man** command to determine how to prepare a man page for
+> Use theÂ **man man**Â command to determine how to prepare a man page for
 > printing.
 >
 > [student@worksation ~]$ man man
 >
 > *...output omitted...*
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image3.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image3.png)
 
-> Press **q** to quit the man page.
+> PressÂ **q**Â to quit the man page.
 
-Note: **man** uses **-t** to prepare a man page for printing, using
+Note: **man**Â usesÂ **-t**Â to prepare a man page for printing, using
 PostScript.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image4.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image4.png)
 
-2.  **Create a formatted output file of the passwd man page. Call the
-    file passwd.ps. Determine the file content format. Inspect the
-    contents of the passwd.ps file.
+2.  **Create a formatted output file of theÂ passwdÂ man page. Call the
+    fileÂ passwd.ps. Determine the file content format. Inspect the
+    contents of theÂ passwd.psÂ file.
 
-> Note: Create formatted output of the **passwd** man page using the
+> Note: Create formatted output of theÂ **passwd**Â man page using the
 > following command:
 >
 > [student@workstation \$\]\$ man -t passwd \> passwd.ps
 >
-> The **\>** symbol *redirects* the contents of the man page to
-> the passwd.ps file. This command is taught in more detail in a
+> TheÂ **\>**Â symbolÂ *redirects*Â the contents of the man page to
+> theÂ passwd.psÂ file. This command is taught in more detail in a
 > following chapter.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image5.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image5.png)
 
-> **Use the man -t command to create a formatted file of the passwd man
+> **Use theÂ man -tÂ command to create a formatted file of theÂ passwdÂ man
 > page.
 >
 > [student@workstation ~]$ man -t passwd \> passwd.ps
@@ -101,19 +100,17 @@ _Full screen width and center alignment_
 >
 > *...output omitted...*
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image6.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image6.png)
 
-> **Use the file command to determine the file content format.
+> **Use theÂ fileÂ command to determine the file content format.
 >
 > [student@workstation ~]$ file /home/student/passwd.ps
 >
 > passwd.ps: **PostScript** document text conforming DSC level 3.0
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image7.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image7.png)
 
-> **Use the less command to view the /home/student/passwd.ps file.
+> **Use theÂ lessÂ command to view theÂ /home/student/passwd.psÂ file.
 >
 > [student@workstation ~]$ less /home/student/passwd.ps
 >
@@ -135,21 +132,19 @@ _Full screen width and center alignment_
 >
 > *...output omitted...*
 
-Note: The output of **file** asserts that the file is in the PostScript
+Note: The output ofÂ **file**Â asserts that the file is in the PostScript
 format, and you have confirmed it by viewing its contents. Notice the
-header lines of PostScript information. Use **q** to quit
-the **less** command.
+header lines of PostScript information. UseÂ **q**Â to quit
+theÂ **less**Â command.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image8.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image8.png)
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image9.png�){: width=�972� height=�589� }
-style="width:7.5in;height:5.65in" />man
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image9.png)
 
-3.  **Using man, learn the commands used for viewing and printing
+3.  **UsingÂ man, learn the commands used for viewing and printing
     PostScript files.
 
-> Using **man** learn the commands used for viewing and printing
+> UsingÂ **man**Â learn the commands used for viewing and printing
 > PostScript files.
 >
 > [student@workstation ~\]# man -k postscript viewer
@@ -172,127 +167,115 @@ style="width:7.5in;height:5.65in" />man
 >
 > pluginviewer (8) - list loadable SASL plugins and their properties
 
-Note: Using multiple words with the **-k** option finds man pages
-matching *either* word; those with "postscript" *or* "viewer" in their
-descriptions. Notice the **evince**(1) commands in the output.
+Note: Using multiple words with theÂ **-k**Â option finds man pages
+matchingÂ *either*Â word; those with "postscript"Â *or*Â "viewer" in their
+descriptions. Notice theÂ **evince**(1) commands in the output.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image10.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image10.png)
 
-4.  **Learn how to use the evince(1) viewer in preview mode. Also,
+4.  **Learn how to use theÂ evince(1) viewer in preview mode. Also,
     determine how to open a document starting on a specific page.
 
-> Use the **man evince** command to learn how to use the viewer in
+> Use theÂ **man evince**Â command to learn how to use the viewer in
 > preview mode.
 >
 > [student@workstation ~]$ man evince**
 >
 > *...output omitted...*
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image11.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image11.png)
 
-Press **q** to quit the man page.
+PressÂ **q**Â to quit the man page.
 
-Note: The -w (or --preview) option opens evince in preview mode.
-The -i option is used to specify a starting page.
+Note: TheÂ -wÂ (orÂ --preview) option opensÂ evinceÂ in preview mode.
+TheÂ -iÂ option is used to specify a starting page.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image12.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
-
-5.  **View your PostScript file using the various evince options you
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image12.png)
+5.  **View your PostScript file using the variousÂ evinceÂ options you
     researched. Close your document file when you are finished.
 
-> Use the **evince** command to open /home/student/passwd.ps
+> Use theÂ **evince**Â command to openÂ /home/student/passwd.ps
 >
 > [student@workstation ~]$ evince /home/student/passwd.ps
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image13.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image13.png)
 
-> Use the **evince -w /home/student/passwd.ps** command to open the file
+> Use theÂ **evince -w /home/student/passwd.ps**Â command to open the file
 > in preview mode.
 >
 > [student@workstation ~]$ evince -w /home/student/passwd.ps
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image14.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image14.png)
 
-> Use the **evince -i 3 /home/student/passwd.ps** command to open the
+> Use theÂ **evince -i 3 /home/student/passwd.ps**Â command to open the
 > file at page 3.
 >
 > [student@workstation ~]$ evince -i 3 /home/student/passwd.ps
 >
-> Note: While normal **evince** mode allows full screen and presentation
-> style viewing, the **evince** preview mode is useful for quick
-> browsing and printing. Notice the **print icon** at the top.
+> Note: While normalÂ **evince**Â mode allows full screen and presentation
+> style viewing, theÂ **evince**Â preview mode is useful for quick
+> browsing and printing. Notice theÂ **print icon**Â at the top.
 >
-> ![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image15.png�){: width=�972� height=�589� }
-> style="width:7.5in;height:5.65in" />
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image15.png)
 
-6.  **Using the man command, research lp(1) to determine how to print
+6.  **Using theÂ manÂ command, researchÂ lp(1) to determine how to print
     any document starting on a specific page. Without actually entering
     any commands (because there are no printers), learn the syntax, in
     one command, to print only pages 2 and 3 of your PostScript file.
 
-> Use the **man lp** command to determine how to print specific pages of
+> Use theÂ **man lp**Â command to determine how to print specific pages of
 > a document.
 >
 > [student@workstation ~]$ man lp
 >
 > *...output omitted...*
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image16.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image16.png)
 
-> Press **q** to quit the man page.
+> PressÂ **q**Â to quit the man page.
 >
-> Note: From lp(1), you learn that the -P option specifies pages.
-> The lp command spools to the *default* printer, sending only the page
+> Note: FromÂ lp(1), you learn that theÂ -PÂ option specifies pages.
+> TheÂ lpÂ command spools to theÂ *default*Â printer, sending only the page
 > range starting on 2 and ending on 3. Therefore, one valid answer
-> is **lp passwd.ps -P 2-3**.
+> isÂ **lp passwd.ps -P 2-3**.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image17.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image17.png)
 
-7.  **Using pinfo, look for GNU Info documentation about
-    the evince viewer**.
+7.  **UsingÂ pinfo, look for GNU Info documentation about
+    theÂ evinceÂ viewer**.
 
-> Use the **pinfo command** to look for GNU Info documentation about
-> the **evince** viewer.
+> Use theÂ **pinfo command**Â to look for GNU Info documentation about
+> theÂ **evince**Â viewer.
 >
 > [student@workstation ~]$ pinfo evince
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image18.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image18.png)
 
-> Note: Notice that the evince(1) man page displays instead.
-> The **pinfo** document viewer looks for a relevant man page when no
+> Note: Notice that theÂ evince(1) man page displays instead.
+> TheÂ **pinfo**Â document viewer looks for a relevant man page when no
 > appropriate GNU documentation node exists for the requested topic.
-> Press **q** to quit.
+> PressÂ **q**Â to quit.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image19.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image19.png)
 
-8.  **Using Firefox, open the system's package documentation directory
-    and browse into the man-db package subdirectory. View the provided
+8.  **UsingÂ Firefox, open the system's package documentation directory
+    and browse into theÂ man-dbÂ package subdirectory. View the provided
     manuals.
 
-> Use **firefox /usr/share/doc** to view system documentation. Browse to
-> the man-db subdirectory. Click on the manuals to view them.
+> UseÂ **firefox /usr/share/doc**Â to view system documentation. Browse to
+> theÂ man-dbÂ subdirectory. Click on the manuals to view them.
 >
 > [student@workstation ~]$ firefox /usr/share/doc
 >
 > Note: Bookmarks can be made for any frequently used directory. After
-> browsing to the man-db directory, click to open and view the text
+> browsing to theÂ man-dbÂ directory, click to open and view the text
 > version of the manual, then close it. Click to open the PostScript
-> version. As observed earlier, **evince** is the system's default
+> version. As observed earlier,Â **evince**Â is the system's default
 > viewer for PostScript and PDF documents. You may wish to return to
-> these documents later to become more knowledgeable about **man**. When
-> finished, close the **evince** viewer.
+> these documents later to become more knowledgeable aboutÂ **man**. When
+> finished, close theÂ **evince**Â viewer.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image20.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image20.png)
 
 <table>
 <caption>manufactured viewport for HTML img</caption>
@@ -302,8 +285,9 @@ _Full screen width and center alignment_
 <thead>
 <tr>
 <th style="text-align: center;"><blockquote>
-<p>![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image21.png�){: width=�972� height=�589� }
-style="width:10.66667in;height:3.34375in" /></p>
+  
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image21.png)
+
 </blockquote></th>
 </tr>
 </thead>
@@ -311,40 +295,40 @@ style="width:10.66667in;height:3.34375in" /></p>
 </tbody>
 </table>
 
-9.  Using the Firefox browser, locate and browse to
-    the initscripts package subdirectory. View the sysconfig.txt file,
+9.  Using theÂ FirefoxÂ browser, locate and browse to
+    theÂ initscriptsÂ package subdirectory. View theÂ sysconfig.txtÂ file,
     which describes important system configuration options stored in
-    the /etc/sysconfig directory.
+    theÂ /etc/sysconfigÂ directory.
 
-> In the Firefox browser, locate the initscripts package subdirectory.
+> In theÂ FirefoxÂ browser, locate theÂ initscriptsÂ package subdirectory.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image22.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image22.png)
 
 > Notice how useful a browser is for locating and viewing local system
-> documentation. Close the document and Firefox when finished.
+> documentation. Close the document andÂ FirefoxÂ when finished.
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image23.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image23.png)
 
 ## Evaluation:
 
-On workstation, run **lab help-review grade** to confirm success of this
+OnÂ workstation, runÂ **lab help-review grade**Â to confirm success of this
 exercise.
 
-> [student@workstation ~]$ lab help-review grade
+```bash
+[student@workstation ~]$ lab help-review grade
+```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image24.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image24.png)
 
 ## Finish:
 
-On workstation, run the **lab help-review finish** script to complete
+OnÂ workstation, run theÂ **lab help-review finish**Â script to complete
 this exercise.
 
-> [student@workstation ~]$ lab help-review finish
+```bash
+[student@workstation ~]$ lab help-review finish
+```
 
-![Desktop View](.\assets\files\SchoolProjects\ITEC200\GettingHelpInRedHatEnterprisLinux/image25.png�){: width=�972� height=�589� }
-_Full screen width and center alignment_
+![Desktop View](/assets/files/SchoolProjects/ITEC200/GettingHelpInRedHatEnterprisLinux/image25.png)
 
 This concludes the lab.
