@@ -5,6 +5,7 @@ date: 2023-06-04 11:00:00 +0800
 categories: [Red Hat System Administration I, Linux Fundamentals - ITEC 200]
 tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should always be lowercase
 ---
+[Back To TOC](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/)
 
 # Chapter 5 Creating, Viewing, and Editing Text Files
 > Red Hat System Administration I 8.2
@@ -227,3 +228,5 @@ lab_review.txt
 ![Desktop View](/assets/files/SchoolProjects/ITEC200/CreatingViewingAndEditingTextFiles/image23.png)
 
 > This concludes the lab.
+
+[Back To TOC](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/)
