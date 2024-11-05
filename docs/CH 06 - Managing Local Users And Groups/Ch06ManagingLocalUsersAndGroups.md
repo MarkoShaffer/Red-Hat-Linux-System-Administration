@@ -15,7 +15,7 @@ tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should al
 > ITEC 200: Linux Fundamentals
 >
 > Professor Kagan Ulucay
-
+>
 > 6/11/2023
 
 ## Outcomes:
