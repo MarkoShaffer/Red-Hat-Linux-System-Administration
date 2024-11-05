@@ -39,8 +39,6 @@ Log in to workstation as student using student as the password.
 | Username | kiosk        | student                | root                        |
 | Password | redhat       | student                | redhat                      |
 
-<https://franklin.instructure.com/courses/12488/modules/items/683350>
-
 ```bash
 [kiosk@foundation0 ~]$ rht-vmctl start all
 [kiosk@foundation0 ~]$ rht-vmview view workstation
