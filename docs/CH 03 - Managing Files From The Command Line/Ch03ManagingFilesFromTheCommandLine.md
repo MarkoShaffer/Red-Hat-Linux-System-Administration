@@ -7,7 +7,7 @@ tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should al
 ---
 [Back To TOC](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/)
 
-# Chapter 03 Managing Files from the Command Line Lab
+# Chapter 3: Managing Files from the Command Line Lab
 > Red Hat System Administration I 8.2
 >
 > Information Technology, Franklin University
