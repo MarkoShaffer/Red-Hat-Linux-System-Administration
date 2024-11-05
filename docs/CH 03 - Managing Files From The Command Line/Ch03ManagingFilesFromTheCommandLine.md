@@ -5,6 +5,7 @@ date: 2023-05-28 11:00:00 +0800
 categories: [Red Hat System Administration I, Linux Fundamentals - ITEC 200]
 tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should always be lowercase
 ---
+[Back To TOC](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/)
 
 # Chapter 03 Managing Files from the Command Line Lab
 > Red Hat System Administration I 8.2
@@ -418,6 +419,7 @@ season2_project_plan.odf]
 ![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image19.png)
 
 19. Exit from serverb.
+
 ```bash
 [student@serverb ~]$ exit
 logout
@@ -428,8 +430,8 @@ Connection to serverb closed.
 ![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image20.png)
 
 ## Evaluation:
-On workstation, run the **lab files-review grade** script to confirm
-success on this lab.
+> On workstation, run the **lab files-review grade** script to confirm
+> success on this lab.
 
 ```bash
 [student@workstation ~]$ lab files-review grade]
@@ -438,9 +440,9 @@ success on this lab.
 ![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image21.png)
 
 ## Finish:
-On workstation, run the **lab files-review finish** script to finish
-this lab. This script removes all files and directories created
-on serverb during the lab exercise.
+> On workstation, run the **lab files-review finish** script to finish
+> this lab. This script removes all files and directories created
+> on serverb during the lab exercise.
 
 ```bash
 [student@workstation ~]$ lab files-review finish
@@ -448,4 +450,6 @@ on serverb during the lab exercise.
 
 ![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingFilesFromTheCommandLine/image22.png)
 
-This concludes the lab.
+> This concludes the lab.
+
+[Back To TOC](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/)
