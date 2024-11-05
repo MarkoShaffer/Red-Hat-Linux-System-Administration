@@ -52,7 +52,7 @@ on the network.
 
 ```bash
 [student@workstation ~]$ ssh student@serverb
-*...output omitted...*
+...output omitted...
 [student@serverb ~]$
 ```
 
@@ -92,7 +92,7 @@ total 0
 
 ```bash
 [student@serverb ~]$ touch tv_season{1..2}\_episode{1..6}.ogg]
-[student@serverb ~]$ ls tv\*]
+[student@serverb ~]$ ls tv\*
 tv_season1_episode1.ogg tv_season1_episode5.ogg tv_season2_episode3.ogg
 tv_season1_episode2.ogg tv_season1_episode6.ogg tv_season2_episode4.ogg
 tv_season1_episode3.ogg tv_season2_episode1.ogg tv_season2_episode5.ogg
@@ -107,8 +107,8 @@ tv_season1_episode4.ogg tv_season2_episode2.ogg tv_season2_episode6.ogg
     Replace *X* with the numbers 1 through 8.
 
 ```bash
-[student@serverb ~]$ touch mystery_chapter{1..8}.odf]>
-[student@serverb ~]$ ls mys\*]>
+[student@serverb ~]$ touch mystery_chapter{1..8}.odf
+[student@serverb ~]$ ls mys\*
 mystery_chapter1.odf mystery_chapter4.odf mystery_chapter7.odf
 mystery_chapter2.odf mystery_chapter5.odf mystery_chapter8.odf
 mystery_chapter3.odf mystery_chapter6.odf
@@ -121,7 +121,7 @@ mystery_chapter3.odf mystery_chapter6.odf
     the TV episodes.
 
 ```bash
-[student@serverb ~]$ mkdir -p Videos/season{1..2}]>
+[student@serverb ~]$ mkdir -p Videos/season{1..2}
 [student@serverb ~]$ ls Videos
 season1 season2
 ```
@@ -182,8 +182,7 @@ season1_project_plan.odf season2_project_plan.odf
     already exists.
 
 ```bash
-[student@serverb ~]$ mkdir
-Documents/my_bestseller/{editor,changes,vacation}
+[student@serverb ~]$ mkdir Documents/my_bestseller/{editor,changes,vacation}
 [student@serverb ~]$ ls -R Documents
 Documents/:
 my_bestseller project_plans
@@ -212,7 +211,7 @@ season1_project_plan.odf season2_project_plan.odf
 
 ```bash
 [student@serverb ~]$ cd Documents/my_bestseller/chapters
-[student@serverb chapters]$ mv ~/mystery_chapter* .
+[student@serverb chapters]$ mv ~/mystery_chapter* 
 [student@serverb chapters]$ ls
 mystery_chapter1.odf mystery_chapter4.odf mystery_chapter7.odf
 mystery_chapter2.odf mystery_chapter5.odf mystery_chapter8.odf
@@ -245,7 +244,7 @@ mystery_chapter1.odf mystery_chapter2.odf
     characters.
 
 ```bash
-[student@serverb chapters]$ mv mystery_chapter{7,8}.odf ../vacation]>
+[student@serverb chapters]$ mv mystery_chapter{7,8}.odf ../vacation
 [student@serverb chapters]$ ls
 mystery_chapter3.odf mystery_chapter5.odf
 mystery_chapter4.odf mystery_chapter6.odf
