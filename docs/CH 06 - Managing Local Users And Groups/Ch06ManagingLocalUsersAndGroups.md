@@ -212,7 +212,7 @@ Connection to serverb closed.
 > lab to ensure that the environment is clean.
 
 ```bash
-[student@workstation ~]$ lab users-review finish**
+[student@workstation ~]$ lab users-review finish
 ```
 
 ![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingLocalUsersAndGroups/image16.png)
