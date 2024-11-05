@@ -126,8 +126,8 @@ student's home directory.
 
 ## Evaluation:
 
-On workstation, run the **lab cli-review grade** script to confirm
-success on this exercise.
+> On workstation, run the **lab cli-review grade** script to confirm
+> success on this exercise.
 
 ```bash
 [student@workstation ~]$ lab cli-review grade
@@ -137,8 +137,7 @@ success on this exercise.
 
 # Finish:
 
-On workstation, run the **lab cli-review finish** script to complete the
-lab.
+> On workstation, run the **lab cli-review finish** script to complete the lab.
 
 ```bash
 [student@workstation ~]$ lab cli-review finish
@@ -146,5 +145,6 @@ lab.
 
 ![Desktop View](/assets/files/SchoolProjects/ITEC200/AccessingTheCommandLine/image12.png)
 
-This concludes the lab.
+> This concludes the lab.
+
 [Back To TOC](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/)
