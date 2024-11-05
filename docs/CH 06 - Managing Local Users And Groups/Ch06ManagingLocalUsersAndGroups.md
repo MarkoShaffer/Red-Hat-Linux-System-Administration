@@ -5,6 +5,8 @@ date: 2023-06-11 11:00:00 +0800
 categories: [Red Hat System Administration I, Linux Fundamentals - ITEC 200]
 tags: [Linux, Red Hat, System Administration, ITEC200]     # TAG names should always be lowercase
 ---
+[Back To TOC](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/)
+
 # Chapter 6: Managing Local Users and Groups
 > Red Hat System Administration I 8.2
 >
@@ -217,5 +219,6 @@ Connection to serverb closed.
 
 ![Desktop View](/assets/files/SchoolProjects/ITEC200/ManagingLocalUsersAndGroups/image16.png)
 
-
 > This concludes the lab.
+
+[Back To TOC](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/)
