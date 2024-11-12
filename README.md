@@ -1,4 +1,7 @@
 # Red Hat Linux System Administration
+### Linux Fundamentals – [ ITEC-200 ] 
+- This course introduces the Linux operating system with a focus on the foundational Linux concepts and core tasks of the system administrator. Students will examine numerous commands and tools to maintain and operate Linux systems. This course utilizes hands-on lab exercises to provide students with professional experience
+
 ## Table of Content (TOC):
 - [CH 02 - Accessing The Command Line](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/docs/CH%2002%20-%20Accessing%20The%20Command%20Line/Ch02AccessingTheCommandLine.md)
 - [CH 03 - Managing Files From The Command Line](https://github.com/MarkoShaffer/Red-Hat-Linux-System-Administration/blob/main/docs/CH%2003%20-%20Managing%20Files%20From%20The%20Command%20Line/Ch03ManagingFilesFromTheCommandLine.md)
